@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Demo</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/normalise.css" rel="stylesheet">
+    <link href="css/unslider.css" rel="stylesheet">
+    <link href="css/unslider-dots.css" rel="stylesheet">
+    <!--    <script src="js/mordernizr-custom.js"></script>-->
+
+
+    <!-- Hosted Google Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<div class="wrapper">
+
+    <body>
+
+        <header>
+            <h1>Save energy, save earth!</h1>
+        </header>
+        <nav>
+            <ul>
+                <!-- NOTE: This is totally unconventional but it's his tutorial... -->
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <div class="handle">Menu</div>
+        </nav>
+        <div class="slideshow">
+            <ul>
+                <li><img src="images/bulb1.jpg" alt="bulb1"></li>
+                <li><img src="images/bulb2.jpg" alt="bulb2"></li>
+                <li><img src="images/bulb3.jpg" alt="bulb3"></li>
+            </ul>
+        </div>
+        <section class="button">
+            <button>First Solution</button>
+            <button>Second Solution</button>
+            <button>Third Solution</button>
+        </section>
+
+        <section id="solutions">
+        </section>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/unslider-min.js"></script>
+        <script>
+            $('.handle').on('click', function() {
+                $('nav ul').toggleClass('showing');
+            });
+
+        </script>
+
+        <script>
+            jQuery(document).ready(function($) {
+                $('.slideshow').unslider({
+                    autoplay: true
+                });
+            });
+
+        </script>
+
+        <script src="js/index.js"></script>
+    </body>
+
+    <footer>
+        <a href="http://fb.com"><img src="images/fb.png"></a>
+        <a href="http://twitter.com"><img src="images/twitter.png"></a>
+        <a href="http://instagram.com"><img src="images/instagram.png"></a>
+    </footer>
+</div>
+
+</html>
